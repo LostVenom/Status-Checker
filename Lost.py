@@ -56,8 +56,7 @@ async def main_devchecker():
                         await asyncio.sleep(int(ttm))
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
-                xxx_teletips += f"\n\n👾 𝖫𝖺𝗌𝗍 𝖴𝗉𝖽𝖺𝗍𝖾𝖽 𝗈𝗇 :\n**☞ {last_update}**\n\n<b>**𝐵𝑒𝑠𝑡 𝑅𝑒𝑔𝑎𝑟𝑑𝑠:
-🎖𝑇𝐼𝑇𝐴𝑁 𝑁𝐸𝑇𝑊𝑂𝑅𝐾🎖**</b>"
+                xxx_teletips += f"\n\n👾 𝖫𝖺𝗌𝗍 𝖴𝗉𝖽𝖺𝗍𝖾𝖽 𝗈𝗇 :\n**☞ {last_update}**\n\n<b>**𝐵𝑒𝑠𝑡 𝑅𝑒𝑔𝑎𝑟𝑑𝑠**</b>:\n<b>**🎖𝑇𝐼𝑇𝐴𝑁 𝑁𝐸𝑇𝑊𝑂𝑅𝐾🎖**</b>"
                 await app.edit_message_text(int(CHANNEL_ID), MESSAGE_ID, xxx_teletips)
                 print(f"Last checked on: {last_update}")                
                 await asyncio.sleep(600)
