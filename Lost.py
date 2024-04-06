@@ -59,6 +59,6 @@ async def main_devchecker():
                 xxx_teletips += f"\n\n👾 𝖫𝖺𝗌𝗍 𝖴𝗉𝖽𝖺𝗍𝖾𝖽 𝗈𝗇 :\n**☞ {last_update}**\n\n          𝐵𝑒𝑠𝑡 𝑅𝑒𝑔𝑎𝑟𝑑𝑠:\n🎖𝑇𝐼𝑇𝐴𝑁 𝑁𝐸𝑇𝑊𝑂𝑅𝐾🎖"
                 await app.edit_message_text(int(CHANNEL_ID), MESSAGE_ID, xxx_teletips)
                 print(f"Last checked on: {last_update}")                
-                await asyncio.sleep(600)
+                await asyncio.sleep(3000)
                         
 app.run(main_devchecker())
