@@ -20,7 +20,7 @@
             "required": true
         },
         "SESSION_STRING": {
-            "description": "A valid Pyrogram session string",
+            "description": "A Pyrogram session string",
             "required": true
         },
         "BOT_LIST": {
@@ -28,7 +28,7 @@
             "required": true
         },
        "CHANNEL_ID": {
-            "description": "Your channel's or group's Telegram id (Example: -1001246808642)",
+            "description": "Your channel's or group's Telegram id (Example: -1002124303816)",
             "required": true
         },
        "GRP_ID":{
@@ -40,7 +40,7 @@
             "required": true
         },
         "BOT_ADMIN_IDS": {
-            "description": "Bot admin(s) id(s) (Example: 1357907531 2468097531 3579864213)"
+            "description": "Bot admin(s) id(s) (Example: 1298476502 2976398265)"
         },
         "TIME_ZONE": {
             "description": "Your time zone (Example: Asia/Kolkata)",
