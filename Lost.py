@@ -26,7 +26,7 @@ async def main_devchecker():
     async with app:
             while True:
                 print("☞ Checking Your Bots...")
-                xxx_teletips = f"<u>**🏷 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {(await app.get_chat(CHANNEL_ID)).title} ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴄʜᴀɴɴᴇʟ**</u>\n\n 📈 | <u>**ʀᴇᴀʟ ᴛɪᴍᴇ ʙᴏᴛ's sᴛᴀᴛᴜs 🍂**</u>"
+                xxx_teletips = f"**{(await app.get_chat(CHANNEL_ID)).title} 𝖡𝗈𝗍 𝖲𝗍𝖺𝗍𝗎𝗌 𝖴𝗉𝖽𝖺𝗍𝖾 :**"
                 for bot in BOT_LIST:
                     await asyncio.sleep(7)
                     try:
@@ -42,21 +42,22 @@ async def main_devchecker():
                         async for ccc in zzz_teletips:
                             bbb = ccc.id
                         if aaa == bbb:
-                            xxx_teletips += f"\n\n╭⎋ **[{bot_info.first_name}](tg://user?id={bot_info.id})**\n╰⊚ **sᴛᴀᴛᴜs: ᴏғғʟɪɴᴇ ❄**"
+                            xxx_teletips += f"\n\n⌬ **[{bot_info.first_name}](tg://user?id={bot_info.id})**\n⌥• **𝖲𝗍𝖺𝗍𝗎𝗌 : Dead 💀**"
                             for bot_admin_id in BOT_ADMIN_IDS:
                                 try:
-                                    await app.send_message(int(GRP_ID), f"**status \n[{bot_info.first_name}](tg://user?id={bot_info.id}) off.**")
+                                    await app.send_message(int(GRP_ID), f"**𝖲𝗍𝖺𝗍𝗎𝗌 \n[{bot_info.first_name}](tg://user?id={bot_info.id}) Dead 💀**")
                                 except Exception:...
                             await app.read_chat_history(bot)
                         else:
-                            xxx_teletips += f"\n\n╭⎋ **[{bot_info.first_name}](tg://user?id={bot_info.id})**\n╰⊚ **sᴛᴀᴛᴜs: ᴏɴʟɪɴᴇ ✨**"
+                            xxx_teletips += f"\n\n⌬ **[{bot_info.first_name}](tg://user?id={bot_info.id})**\n⌥• **𝖲𝗍𝖺𝗍𝗎𝗌 : 𝖫𝗂𝗏𝖾 💨**"
                             await app.read_chat_history(bot)
                     except FloodWait as e:
                         ttm = re.findall("\d{0,5}", str(e))
                         await asyncio.sleep(int(ttm))
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
-                xxx_teletips += f"\n\n✔️ <u>ʟᴀsᴛ ᴄʜᴇᴄᴋᴇᴅ ᴏɴ:</u>\n**ᴅᴀᴛᴇ & ᴛɪᴍᴇ: {last_update}**\n**ᴛɪᴍᴇ ᴢᴏɴᴇ: ({TIME_ZONE})**\n\n<i><u>♻️ ʀᴇғʀᴇsʜᴇs ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴡɪᴛʜɪɴ 10 ᴍɪɴᴜᴛᴇs.</u></i>\n\n<b>**๏ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{(await app.get_chat(CHANNEL_ID)).username} ๏**</b>"
+                xxx_teletips += f"\n\n👾 𝖫𝖺𝗌𝗍 𝖴𝗉𝖽𝖺𝗍𝖾𝖽 𝗈𝗇 :\n**☞ {last_update}**\n\n<b>**𝐵𝑒𝑠𝑡 𝑅𝑒𝑔𝑎𝑟𝑑𝑠:
+🎖𝑇𝐼𝑇𝐴𝑁 𝑁𝐸𝑇𝑊𝑂𝑅𝐾🎖**</b>"
                 await app.edit_message_text(int(CHANNEL_ID), MESSAGE_ID, xxx_teletips)
                 print(f"Last checked on: {last_update}")                
                 await asyncio.sleep(600)
