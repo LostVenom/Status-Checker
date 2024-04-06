@@ -24,7 +24,7 @@
             "required": true
         },
         "BOT_LIST": {
-            "description": "Your bot username list without '@' (Example: teletips1bot teletips2bot teletips3bot)",
+            "description": "Your bot username list without '@' (Example: LostBot HVCodexBot)",
             "required": true
         },
        "CHANNEL_ID": {
