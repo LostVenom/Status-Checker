@@ -22,7 +22,7 @@ MESSAGE_ID = int(os.environ["MESSAGE_ID"])
 BOT_ADMIN_IDS = [int(i.strip()) for i in os.environ.get("BOT_ADMIN_IDS").split(' ')]
 GRP_ID = os.environ.get("GRP_ID") #GRP_ID is for logs group where checker will send warnings of offline bots.
 
-async def main_devchecker():
+async def main_Lost():
     async with app:
             while True:
                 print("☞ Checking Your Bots...")
@@ -61,4 +61,4 @@ async def main_devchecker():
                 print(f"Last checked on: {last_update}")                
                 await asyncio.sleep(3000)
                         
-app.run(main_devchecker())
+app.run(main_Lost())
