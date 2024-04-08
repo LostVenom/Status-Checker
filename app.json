@@ -1,60 +1,42 @@
 {
-    "name": "Lost Status",
-    "description": "Telegram Bot Checker for checking bot status.",
-    "repository": "https://github.com/LostVenom/Status-Checker",
-    "keywords": [
-        "BotStatus",
-        "live",
-        "Up or down",
-        "Check status of bots",
-        "Telegram Bot Status userbot",
-        "Pyrogram userbot"
-    ],
+    "name": "status bot",
+    "description": "Easy & powerful bot to check if your all Telegram bots are working or not.",
     "env": {
         "API_ID": {
             "description": "Get from my.telegram.org/apps",
-            "required": true,
-            "value": "24317793"
+            "required": true
         },
         "API_HASH": {
             "description": "Get from my.telegram.org/apps",
-            "required": true,
-            "value": "f9fd162dba5a4e588112ba716a30ca8b"
+            "required": true
         },
         "SESSION_STRING": {
-            "description": "A Pyrogram session string",
-            "required": true,
-            "value": "kjhdkjqhwkqwkj"
+            "description": "A valid Pyrogram session string",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "A valid bot token get from @botfather",
+            "required": true
         },
         "BOT_LIST": {
-            "description": "Your bot username list without '@' (Example: LostBot HVCodexBot)",
-            "required": true,
-            "value": "T_SeriesBot TomXJerry_Bot TitanXStringBot HvCodexBot ALONE_xD_MUSIC_BOT "
+            "description": "Your bot username list without '@' (Example: Maybexsessionbot MaybexhackBot)",
+            "required": true
         },
-       "CHANNEL_ID": {
-            "description": "Your channel's or group's Telegram id (Example: -1002124303816)",
-            "required": true,
-            "value": "-1001982130535"
+       "CHANNEL_OR_GROUP_ID": {
+            "description": "Your channel's or group's Telegram id (Example: -1001246808642)",
+            "required": true
         },
-       "GRP_ID":{
-            "description": "Your Group Id To Send Warnings.",
-            "required": true,
-            "value": "-1002124303816"
-       },
        "MESSAGE_ID": {
             "description": "Telegram id of message from your channel or group (Example: 10)",
-            "required": true,
-            "value": "42"
+            "required": true
         },
-        "BOT_ADMIN_IDS": {
-            "description": "Bot admin(s) id(s) (Example: 1298476502 2976398265)"
-            "required": true,
-            "value": "1215104805"
+        "OWNER_ID": {
+            "description": "Owner id (Example: 3579864213)",
+            "required": true
         },
         "TIME_ZONE": {
             "description": "Your time zone (Example: Asia/Kolkata)",
             "required": true
-            "value": "Asia/Kolkata"
         }
     },
     "formation": {
@@ -68,5 +50,4 @@
             "url": "heroku/python"
         }
     ]
-}
-
+        }
