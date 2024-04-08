@@ -14,42 +14,42 @@
         "API_ID": {
             "description": "Get from my.telegram.org/apps",
             "required": true,
-            "value": ""
+            "value": "24317793"
         },
         "API_HASH": {
             "description": "Get from my.telegram.org/apps",
             "required": true,
-            "value": ""
+            "value": "f9fd162dba5a4e588112ba716a30ca8b"
         },
         "SESSION_STRING": {
             "description": "A Pyrogram session string",
             "required": true,
-            "value": ""
+            "value": "kjhdkjqhwkqwkj"
         },
         "BOT_LIST": {
             "description": "Your bot username list without '@' (Example: LostBot HVCodexBot)",
             "required": true,
-            "value": ""
+            "value": "T_SeriesBot TomXJerry_Bot TitanXStringBot HvCodexBot ALONE_xD_MUSIC_BOT "
         },
        "CHANNEL_ID": {
             "description": "Your channel's or group's Telegram id (Example: -1002124303816)",
             "required": true,
-            "value": ""
+            "value": "-1001982130535"
         },
        "GRP_ID":{
             "description": "Your Group Id To Send Warnings.",
             "required": true,
-            "value": ""
+            "value": "-1002124303816"
        },
        "MESSAGE_ID": {
             "description": "Telegram id of message from your channel or group (Example: 10)",
             "required": true,
-            "value": ""
+            "value": "42"
         },
         "BOT_ADMIN_IDS": {
             "description": "Bot admin(s) id(s) (Example: 1298476502 2976398265)"
             "required": true,
-            "value": ""
+            "value": "1215104805"
         },
         "TIME_ZONE": {
             "description": "Your time zone (Example: Asia/Kolkata)",
